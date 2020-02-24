@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Library {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer, Integer> booksScore = new HashMap<Integer,Integer>();
+//		ArrayList<Integer> noOfLibrary = new ArrayList<>();
+		ArrayList<Integer> noOfBooks = new ArrayList<>();
+		ArrayList<Integer> signUpProc = new ArrayList<>();
+		ArrayList<Integer> bookShipmentNo = new ArrayList<>();
+		
+		Scanner sc = new Scanner(System.in);
+		Integer BOOKS = sc.nextInt();
+		Integer LIBRARY = sc.nextInt();
+		Integer DAYSFORSCANNING = sc.nextInt();
+		
+		
+		for(Integer i=0;i<BOOKS;i++) {
+			booksScore.put(i, sc.nextInt());
+		}
+		
+		for(Integer i=0;i<LIBRARY;i++) {
+			noOfBooks.add(sc.nextInt());
+			signUpProc.add(sc.nextInt());
+			bookShipmentNo.add(sc.nextInt());
+		}
+	
+		
+	}
+
+}
